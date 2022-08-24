@@ -12,6 +12,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - echo s3 sync dist/front-en/ s3://codepipeline-us-east-1-124019991268 --delete
 # Include only the files required for your application to run.
 artifacts:
   files:
